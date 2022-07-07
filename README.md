@@ -55,7 +55,7 @@ La información de los parámetros requeridos por el endpoint lo van a poder enc
 en: https://newsapi.org/docs/endpoints/everything.
 
 <div align="center">
-  <img width="100%" src="/tpinformatorio/public/ej.png" alt="cover" />
+  <img width="100%" src="https://github.com/fercarballo/TPI-informatorio-react/blob/main/public/ej.png" alt="cover" />
 </div>
 Ejemplo de búsqueda:
 https://newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY&page=1&pageSize=1
