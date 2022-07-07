@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# TPI Informatorio React 2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cuando el usuario realiza una búsqueda, se deben aplicar las siguientes validaciones
+sobre el input:
+● No se debe realizar la búsqueda a menos que el usuario haya escrito al menos 3
+caracteres
+● El botón buscar se debe habilitar cuando el input cumpla con la condición
+anterior.
+● [OPCIONAL], la búsqueda puede realizarse apretando la tecla enter del teclado.
+● Se deberá presentar un spinner/loading para que el usuario sepa de que se está
+realizando un procesamiento.
+● En caso de que ocurra algún fallo, se deberá presentar un mensaje adecuado,
+explicando el error al usuario.
+● En caso de que no haya resultados, se deberá presentar un mensaje adecuado,
+que indique que no hay resultados para la búsqueda.
+● La búsqueda sólo debe realizarse en noticias en español.
+Una vez obtenida la respuesta del servicio, se deberá presentar una interfaz con los
+resultados obtenidos.
+Por cada noticia obtenida, se debe presentar :
+● El nombre de la plataforma de origen de la noticia
+● El título de la noticia
+● La imagen de portada de la noticia
+● La fecha de publicación de la noticia en formato:dd-mm-aaaa - hh:mm hs.
+Ejemplo: Publicado el: 28-06-2022 a las 03:00 hs. (Para esto valerse de la librería
+Luxon Date: https://moment.github.io/luxon/#/?id=luxon).
+● Cuando el usuario haga click sobre una noticia, la misma deberá de abrirse en
+una nueva pestaña.
+El siguiente es cómo se debería de distribuir la información, el estilo, fuente y colores
+queda a criterio de cada uno:
+El listado de noticias se debería de visualizar con el siguiente formato:
+Se tienen los siguientes requerimientos:
+● Sobre el listado se debe de realizar
+○ Mostrar la leyenda: Está viendo 10 noticias de {totalResults} resultados
+○ Paginación, donde se presenten 10 noticias por vez,
+○ [OPCIONAL] Se puede optar por un ‘Infinite Scroll’.
+○ Lo importante es que se vean 10 noticias por página.
+Condiciones Generales:
+● El buscador debe estar disponible ya sea en la raíz (http://localhost) o en la ruta
+/buscador (http://localhost/buscador).
+● En caso que el usuario ingrese en una url inválida, se debe presentar una página
+de 404, con el mensaje recurso no encontrado, con los estilos apropiados.
+● El proyecto debe contener pruebas unitarias.
+● El proyecto deberá realizarse en grupo de 2 personas como máximo.
+● El proyecto se deberá subir a un repositorio en github y compartir con el tutor
+de la comisión a la que pertenezca.
+● La aplicación debe contener un Footer y Header, acorde a los estilos escogidos.
+● Los estilos, colores y fuentes quedan a criterio de las personas que integren el
+equipo. Las imágenes presentadas son a modo de ejemplo.
+● [OPCIONAL] Uso de librerías/frameworks como mui, bootstrap,
+styled-components
+Para poder realizar este proyecto, deberán registrarse en el sitio: https://newsapi.org/.
+Al obtener la apikey, tendrán disponible un endpoint, que les permitirá realizar la
+búsqueda de noticias.
+La información de los parámetros requeridos por el endpoint lo van a poder encontrar
+en: https://newsapi.org/docs/endpoints/everything.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <img width="100%" src="/tpinformatorio/public/ej.png" alt="cover" />
+</div>
+Ejemplo de búsqueda:
+https://newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY&page=1&pageSize=1
+0&language=es
